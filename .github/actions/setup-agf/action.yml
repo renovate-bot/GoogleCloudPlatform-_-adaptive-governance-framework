@@ -3,7 +3,7 @@ description: 'Downloads, extracts, and adds a specific version of the AGF CLI to
 
 inputs:
   version:
-    description: 'The version of AGF CLI to install (e.g., v0.2.0)'
+    description: 'The version of AGF CLI to install (e.g., v0.0.1)'
     required: true
   script-path:
     description: 'Path to the run_agf.sh script relative to repository root'

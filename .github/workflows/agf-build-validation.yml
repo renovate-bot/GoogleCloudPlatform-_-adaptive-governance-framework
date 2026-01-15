@@ -33,7 +33,7 @@ jobs:
         id: setup_agf
         uses: ./.github/actions/setup-agf
         with:
-          version: 'v0.2.2'
+          version: 'v0.0.1'
 
       - name: Run 'agf build'
         id: build
@@ -138,7 +138,7 @@ jobs:
         id: setup_agf
         uses: ./.github/actions/setup-agf 
         with:
-          version: 'v0.2.2'
+          version: 'v0.0.1'
 
       - name: Run 'agf build'
         id: build
