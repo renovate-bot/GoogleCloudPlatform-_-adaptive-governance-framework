@@ -1,6 +1,3 @@
-# This file controls who is tagged for review for any given pull request.
-#
-# For syntax help see:
-# https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners#codeowners-syntax
+# This file controls who is tagged for review for any given pull request
 
-*   @GoogleCloudPlatform/TEAM_NAME
+* @tdesrosi

@@ -14,18 +14,16 @@
 
 package main
 
-import "github.com/tdesrosi/agf-googlestaging-clone/cmd"
+import "github.com/GoogleCloudPlatform/adaptive-governance-framework/cmd"
 
 // These variables are populated by the Go linker (`ldflags`) during the build process.
 // The `-X` flag targets variables in the 'main' package.
 var (
-	Version string // Default will be empty, GoReleaser injects like "0.1.0"
-	Commit  string // Default will be empty, GoReleaser injects commit SHA
-	Date    string // Default will be empty, GoReleaser injects build date
+	Version string
+	Commit  string
+	Date    string
 )
 
 func main() {
-	// Pass the version information (populated by ldflags) into the cmd package.
-	// Assumes cmd package has an ExecuteVersionInfo function or similar mechanism.
 	cmd.Execute(Version, Commit, Date)
 }
