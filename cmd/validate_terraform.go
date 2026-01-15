@@ -84,7 +84,7 @@ func validateTerraform(terraformDir string) []string {
 		resourceDeclarationMatches := resourceDeclarationRegex.FindAllStringIndex(string(terraformCode), -1)
 
 		if len(resourceDeclarationMatches) != 1 {
-			lineNum := -1
+			var lineNum int
 			if len(resourceDeclarationMatches) > 0 {
 				// Get line number of the first declaration found
 				firstMatchStartOffset := resourceDeclarationMatches[0][0]
